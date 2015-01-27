@@ -1,0 +1,8 @@
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    margin-top: 0;
+    position: relative;
+    z-index: 15;
+    width: 100%;
+    background-color: #fff;
+}

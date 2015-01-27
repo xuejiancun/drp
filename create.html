@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>添加产品</title>
+    <link rel="stylesheet" href="css/metro-bootstrap.css">
+    <link rel="stylesheet" href="css/metro-bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/iconFont.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.widget.min.js"></script>
+    <script src="js/metro.min.js"></script>
+
+    <script>
+        function saveProduct() {
+            $.Dialog({
+                shadow: true,
+                overlay: false,
+                draggable: true,
+                icon: '<span class="icon-comments-5"></span>',
+                title: '消息',
+                width: 500,
+                padding: 10,
+                content: '产品【小苹果】保存成功。'
+            });
+        }
+
+        function releaseProduct() {
+            $.Dialog({
+                shadow: true,
+                overlay: false,
+                draggable: true,
+                icon: '<span class="icon-comments-5"></span>',
+                title: '消息',
+                width: 500,
+                padding: 10,
+                content: '产品【小苹果】发布成功。'
+            });
+        }
+
+    </script>
+</head>
+
+<body class="metro">
+
+    <div class="content">
+        <div class="grid fluid">
+            <div class="productForm">
+                <form>
+                    <fieldset>
+                        <legend>添加产品</legend>
+
+                        <div class="tab-control" data-role="tab-control">
+                            <ul class="tabs">
+                                <li class="active"><a href="#_page_1">基本配置</a></li>
+                                <li><a href="#_page_2">参数配置</a></li>
+                                <li><a href="#_page_3">自定义配置</a></li>
+                                <li class="place-right"><a href="#_page_4"><i class="icon-grid-view on-left"></i>预览</a></li>
+                            </ul>
+
+                            <div class="frames">
+                                <div class="frame" id="_page_1">
+                                    <table id="basicConfigTable">
+                                        <tr>
+                                            <td>
+                                                <p>产品名称</p>
+                                                <div class="input-control text" data-role="input-control">
+                                                    <input type="text">
+                                                    <button class="btn-clear" tabindex="-1"></button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>产品配置</p>
+                                                <div class="input-control text" data-role="input-control">
+                                                    <input type="text">
+                                                    <button class="btn-clear" tabindex="-1"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>产品名称</p>
+                                                <div class="input-control text" data-role="input-control">
+                                                    <input type="text">
+                                                    <button class="btn-clear" tabindex="-1"></button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>产品配置</p>
+                                                <div class="input-control text" data-role="input-control">
+                                                    <input type="text">
+                                                    <button class="btn-clear" tabindex="-1"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>产品名称</p>
+                                                <div class="input-control text" data-role="input-control">
+                                                    <input type="text">
+                                                    <button class="btn-clear" tabindex="-1"></button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>产品配置</p>
+                                                <div class="input-control text" data-role="input-control">
+                                                    <input type="text">
+                                                    <button class="btn-clear" tabindex="-1"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <p>产品图片</p>
+                                                <div class="input-control file" data-role="input-control">
+                                                    <input type="file">
+                                                    <button class="btn-file"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                                <div class="frame" id="_page_2">
+                                    <p>Config</p>
+                                </div>
+                                <div class="frame" id="_page_3">
+                                    <p>UDF</p>
+                                </div>
+                                <div class="frame" id="_page_4">
+                                    <p>Preview</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+                </form>
+                <button class="button large" onclick="saveProduct()"><span class="icon-floppy on-left"></span>保存</button>
+                <button class="button large default" onclick="releaseProduct()"><span class="icon-share-2 on-left"></span>发布</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
