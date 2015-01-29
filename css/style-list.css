@@ -1,0 +1,62 @@
+#nav {
+    height: 45px;
+    width: 100%;
+    min-width: 1200px;
+}
+
+#hook {
+    height: 50px;
+}
+
+#content {
+    width: 100%;
+    text-align: left;
+    min-width: 1200px;
+}
+
+#title-row {
+    margin-left: 50px;
+}
+
+#title-font {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.list-row {
+    margin: 50px;
+}
+
+#image-fullfill {
+    width: 100%;
+}
+
+.product-info {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#product-font {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#price-font {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#back2top {
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+.shadow {
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+}

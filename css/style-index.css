@@ -1,0 +1,47 @@
+#nav {
+    height: 45px;
+    width: 100%;
+    min-width: 1200px;
+}
+
+#hook {
+    height: 50px;
+}
+
+#content {
+    width: 100%;
+    text-align: left;
+    min-width: 1200px;
+}
+
+#title-row-first {
+    margin-left: 50px;
+}
+
+#title-row {
+    margin-left: 50px;
+    margin-top:100px;
+}
+
+#title-font {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#content-row {
+    margin-left: 50px;
+}
+
+.product-info {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#product-font {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#image-fullfill {
+    width: 100%;
+}

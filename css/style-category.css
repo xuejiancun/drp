@@ -1,0 +1,28 @@
+#nav {
+    height: 45px;
+    width: 100%;
+    min-width: 1200px;
+}
+
+#hook {
+    height: 50px;
+}
+
+#title-row {
+    margin-left: 50px;
+}
+
+#title-font {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#content {
+    width: 100%;
+    text-align: left;
+    min-width: 1200px;
+}
+
+#image-fullfill {
+    width: 100%;
+}

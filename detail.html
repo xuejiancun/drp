@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/metro-bootstrap.css">
+    <link rel="stylesheet" href="css/metro-bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/iconFont.css">
+    <link rel="stylesheet" href="css/style-detail.css">
+    <link rel="stylesheet" href="css/stickup.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.widget.min.js"></script>
+    <script src="js/metro.min.js"></script>
+    <script src="js/stickUp.min.js"></script>
+    <script src="js/product.common.js"></script>
+    <script src="js/product.detail.js"></script>
+
+    <title>分销系统</title>
+</head>
+
+<body class="metro">
+
+    <div id="nav" class="navbar-wrapper shadow">
+        <nav class="navigation-bar dark">
+            <div class="navigation-bar-content">
+                <a href="index.html" class="element"><span class="icon-grid-view"></span></a>
+
+                <a class="pull-menu" href="#"></a>
+                <ul class="element-menu">
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="category.html">分类</a>
+                    </li>
+                    <li><a href="list.html">潮流车</a></li>
+                    <li>
+                        <a href="#">促销</a>
+                    </li>
+                </ul>
+
+                <div class="no-tablet-portrait">
+                    <div class="element input-element">
+                        <form>
+                            <div class="input-control text">
+                                <input type="text">
+                                <button class="btn-search"></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="element input-element">
+                        <i class="icon-phone on-left"></i>联系我们：0579-1234567
+                    </div>
+
+                    <a class="element brand place-right" href="#"><i class="icon-exit on-left"></i>注销</a>
+                    <a class="element brand place-right" href="#"><i class="icon-user on-left"></i>我的账户</a>
+                    <a class="element brand place-right" href="#"><i class="icon-credit-card on-left"></i>我的订单</a>
+                    <a class="element brand place-right" href="#"><i class="icon-cart on-left"></i>购物车</a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="hook"></div>
+
+    <div id="content">
+
+        <div id="content-left">
+            <div id="product-detail">
+                <div id="product-detail-title">
+                    <div class="panel">
+                        <div class="panel-header">
+                            杨劲 G-JCW-3R4809L-Z1
+                        </div>
+
+                        <div class="panel-content">
+                            <div class="carousel" id="product-image-carousel">
+                                <div class="slide">
+                                    <a href="#"><img src="images/car1.jpg" class="cover1" /></a>
+                                </div>
+
+                                <div class="slide">
+                                    <a href="#"><img src="images/car2.jpg" class="cover1" /></a>
+                                </div>
+
+                                <div class="slide">
+                                    <a href="#"><img src="images/car3.jpg" class="cover1" /></a>
+                                </div>
+
+                                <div class="slide">
+                                    <a href="#"><img src="images/car4.jpg" class="cover1" /></a>
+                                </div>
+
+                                <div class="slide">
+                                    <a href="#"><img src="images/car5.jpg" class="cover1" /></a>
+                                </div>
+                            </div>
+                            <script>
+                                $(function () {
+                                    $("#product-image-carousel").carousel({
+                                        height: 315,
+                                        period: 5000,
+                                        effect: "fade",
+                                        markers: {
+                                            show: true,
+                                            position: 'bottom-center'
+                                        }
+                                    });
+                                })
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="product-detail-tabs" class="tab-control" data-role="tab-control">
+                    <ul class="tabs">
+                        <li class="active" id="product-tab"><a href="#_page_1" id="product-tab-title">产品介绍</a></li>
+                        <li id="product-tab"><a href="#_page_2" id="product-tab-title">参数配置</a></li>
+                        <li id="product-tab"><a href="#_page_3" id="product-tab-title">用户评论</a></li>
+                        <li id="product-tab"><a href="#_page_4" id="product-tab-title">常见问题</a></li>
+                    </ul>
+
+                    <div class="frames">
+                        <div class="frame" id="_page_1">
+                            <div class="grid fluid">
+                                <div class="row product-info-row">
+                                    <div class="image-container shadow" id="image-fullfill">
+                                        <img src="images/car6.jpg">
+                                        <div class="overlay-fluid">
+                                            描述性内容描述性内容描述性内容描述性内容描述性内容描述性内容描述性内容
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row product-info-row">
+                                    <div class="image-container shadow" id="image-fullfill">
+                                        <img src="images/car7.jpg">
+                                        <div class="overlay-fluid">
+                                            描述性内容描述性内容描述性内容描述性内容描述性内容描述性内容描述性内容
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row product-info-row">
+                                    <div class="image-container shadow" id="image-fullfill">
+                                        <img src="images/car8.jpg">
+                                        <div class="overlay-fluid">
+                                            描述性内容描述性内容描述性内容描述性内容描述性内容描述性内容描述性内容
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row product-info-row">
+                                    <div class="image-container shadow" id="image-fullfill">
+                                        <img src="images/car9.jpg">
+                                        <div class="overlay-fluid">
+                                            描述性内容描述性内容描述性内容描述性内容描述性内容描述性内容描述性内容
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row product-info-row">
+                                    <div class="image-container shadow" id="image-fullfill">
+                                        <img src="images/car10.jpg">
+                                        <div class="overlay-fluid">
+                                            描述性内容描述性内容描述性内容描述性内容描述性内容描述性内容描述性内容
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frame" id="_page_2">
+                            <div id="tab-config">
+                                <legend>性能</legend>
+                                <table class="table striped bordered hovered">
+                                    <tbody>
+                                        <tr><td class="config-column-left">电机规格</td><td class="config-column-right">60V460Rpm500W</td></tr>
+                                        <tr><td class="config-column-left">电池规格</td><td class="config-column-right">48V20AH*5</td></tr>
+                                        <tr><td class="config-column-left">续航里程</td><td class="config-column-right">60KM</td></tr>
+                                        <tr><td class="config-column-left">制动系统</td><td class="config-column-right">前后鼓刹</td></tr>
+                                        <tr><td class="config-column-left">避震系统</td><td class="config-column-right">前直筒液压，后单簧加粗</td></tr>
+                                    </tbody>
+                                </table>
+
+                                <legend>外观</legend>
+                                <table class="table striped bordered hovered">
+                                    <tbody>
+                                        <tr><td class="config-column-left">外形尺寸</td><td class="right">1630*630*1010</td></tr>
+                                        <tr><td class="config-column-left">踏板长度</td><td class="right">300mm</td></tr>
+                                        <tr><td class="config-column-left">底盘离地</td><td class="right">170mm</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="frame" id="_page_3">
+                            <div id="tab-comment">
+                                <div class="balloon right">
+                                    <div class="padding20">
+                                        <div class="fg-green" data-role="rating" data-score="5" data-stars="5"></div>
+                                        <strong>非常经典，值得阅读</strong>&nbsp&nbsp&nbsp2013年8月22日<a href="#"><i class="icon-user on-left margin-left-30"></i>薛剑存</a>
+                                        <p id="comment-useful">165/176 人认为此评论有用</p>
+                                        <p id="margin-top-20">
+                                            首先，我是在观看了迪卡普里奥版本的电影之后阅读这本书的，我不想评论二者之中孰优孰劣，因为我认为这二者各有千秋。比如在电影中展现了一个几乎有点超脱时代的奢华城市（尤其是音乐有点超脱），但我认为这体现了小说的社会背景，但是这在书中较难体现出来，在书中更多展现了用几页纸罗列的各种宾客名单，表现方式由此可见一斑。
+                                            当然，值得一提的是，电影版仍然遗漏了一些比较关键的细节，这在书中有着非常明显的表现，尤其是对于＂嘴里全都是钱的味道＂的展现上。也许导演想一直直到最后才打破保持的对于黛西的纯洁描写，但是这样会削弱故事的立体性。在小说中，早在尼克第一次来到汤姆家，黛西对他抱怨汤姆的冷漠后，显示出＂显然没有抱着孩子离开家的打算＂，使得尼克＂有点厌恶＂。另外，盖茨比说她＂嫁给汤姆是因为自己穷，等烦了＂，黛西觉得汤姆＂身型和地位很有份量，令自己觉得光彩十足＂，＂她想现在（与汤姆结婚前）就安排好自己未来人生……必须由近在眼前……实实在在的东西……推动＂，这些都是铺垫，所以才会使盖茨比一脱口就是那句＂钱的味道＂的话，而电影忽略这些细节与心理描写，甚至那句话也变成了删减片段。由此可见，阅读原著是一种升华。
+                                            至于本书的版本，我觉得译文还是比较忠实原著，比较流畅，看过一些版本对比，然后购买了这本。
+                                            但是这个版本中没有老版本（非电影版）之中的村上春树序言，有点可惜。
+                                        </p>
+                                        <strong id="comment-useful">这条评论对您有用吗？</strong>
+                                        <button class="button small">是</button>
+                                        <button class="button small">否</button>
+                                    </div>
+                                </div>
+                                <div class="balloon right">
+                                    <div class="padding20">
+                                        <div class="fg-green" data-role="rating" data-score="3" data-stars="5"></div>
+                                        <strong>挑个翻译小错</strong>&nbsp&nbsp&nbsp2013年8月30日<a href="#"><i class="icon-user on-left margin-left-30"></i>薛剑存</a>
+                                        <p id="comment-useful">82/87 人认为此评论有用</p>
+                                        <p id="margin-top-20">
+                                            第一章开始介绍卡拉韦家族的地方，讲“他派了个替身去参加独立战争”，有误。Civil War，应是美国南北战争，而非独立战争（the American War of Independence）。就扫了一眼，是个小错。读下去还有其他再慢慢补充来。
+                                        </p>
+                                        <strong id="comment-useful">这条评论对您有用吗？</strong>
+                                        <button class="button small">是</button>
+                                        <button class="button small">否</button>
+                                    </div>
+                                </div>
+                                <div class="balloon right">
+                                    <div class="padding20">
+                                        <div class="fg-green" data-role="rating" data-score="4" data-stars="5"></div>
+                                        <strong>很经典 很棒</strong>&nbsp&nbsp&nbsp2013年12月7日<a href="#"><i class="icon-user on-left margin-left-30"></i>薛剑存</a>
+                                        <p id="comment-useful">9/9 人认为此评论有用</p>
+                                        <p id="margin-top-20">
+                                            看上去很精致 英文版字大小正合适 封面简洁有点过于朴素 没有明显语法错误很棒我觉得比我买的别的版的英文的要好
+                                            中文版很漂亮 里面的书页也不错
+                                        </p>
+                                        <strong id="comment-useful">这条评论对您有用吗？</strong>
+                                        <button class="button small">是</button>
+                                        <button class="button small">否</button>
+                                    </div>
+                                </div>
+
+                                <div class="balloon right">
+                                    <div class="padding20">
+                                        <div class="fg-green" data-role="rating" data-score="5" data-stars="5"></div>
+                                        <strong>強烈推薦</strong>&nbsp&nbsp&nbsp2013年9月10日<a href="#"><i class="icon-user on-left margin-left-30"></i>薛剑存</a>
+                                        <p id="comment-useful">11/12 人认为此评论有用</p>
+                                        <p id="margin-top-20">
+                                            快遞送來的時候包裝完好。
+                                            附帶一本英文原版和一篇村上春樹的序。
+                                            真心佩服鄧若虛的翻譯。五星推薦。
+                                            kindle版也不錯。不過貌似沒有村上的序。
+                                        </p>
+                                        <strong id="comment-useful">这条评论对您有用吗？</strong>
+                                        <button class="button small">是</button>
+                                        <button class="button small">否</button>
+                                    </div>
+                                </div>
+
+                                <div class="balloon right">
+                                    <div class="tab-control padding20" data-role="tab-control">
+                                        <ul class="tabs">
+                                            <li class="active"><a href="#write">我要评论</a></li>
+                                        </ul>
+
+                                        <div class="frames">
+                                            <div id="write-comment">
+                                                <div class="rating fg-green" data-static="false" data-stars="5" data-role="rating"></div>
+                                                <input class="form-control" type="text" style="height:30px;width:300px;font-family:'Microsoft YaHei';font-size:small;padding-left:4px;" placeholder="填写摘要">
+                                            </div>
+                                            <div id="write" class="frame">
+                                                <textarea data-transform="input-control" placeholder="填写评论内容"></textarea>
+                                            </div>
+                                            <button id="submit-comment" class="button bg-amber"><span class="icon-comments-4 on-left"></span>提交</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="frame" id="_page_4">
+                            <div id="tab-qa">
+                                <div class="panel" data-role="panel" id="margin-top-20">
+                                    <div class="panel-header">
+                                        常见问题1
+                                    </div>
+                                    <div class="panel-content">
+                                        专业解答
+                                    </div>
+                                </div>
+                                <div class="panel" data-role="panel" id="margin-top-20">
+                                    <div class="panel-header">
+                                        常见问题2
+                                    </div>
+                                    <div class="panel-content">
+                                        专业解答
+                                    </div>
+                                </div>
+                                <div class="panel" data-role="panel" id="margin-top-20">
+                                    <div class="panel-header">
+                                        常见问题3
+                                    </div>
+                                    <div class="panel-content">
+                                        专业解答
+                                    </div>
+                                </div>
+                                <div class="panel" data-role="panel" id="margin-top-20">
+                                    <div class="panel-header">
+                                        常见问题4
+                                    </div>
+                                    <div class="panel-content">
+                                        专业解答
+                                    </div>
+                                </div>
+                                <div class="panel" data-role="panel" id="margin-top-20">
+                                    <div class="panel-header">
+                                        常见问题5
+                                    </div>
+                                    <div class="panel-content">
+                                        专业解答
+                                    </div>
+                                </div>
+                                <div class="panel" data-role="panel" id="margin-top-10">
+                                    <div class="panel-header">
+                                        常见问题5
+                                    </div>
+                                    <div class="panel-content">
+                                        专业解答
+                                    </div>
+                                </div>
+                                <div class="panel" data-role="panel" id="margin-top-10">
+                                    <div class="panel-header">
+                                        我要提问
+                                    </div>
+                                    <div class="panel-content">
+                                        <div>
+                                            <input class="form-control" type="text" style="height:40px;width:360px;font-family:'Microsoft YaHei';font-size:small;padding-left:4px;" placeholder="填写问题">
+                                            <button class="button bg-amber" id="submit-qa"><span class="icon-help on-left"></span>提交</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div style="margin-top:40px;margin-bottom:20px;">
+                                    <i class="icon-phone on-left"></i>联系我们：0579-1234567
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="content-right">
+            <div id="product-buy">
+                <div class="panel">
+                    <div class="panel-header" style="text-align:center">
+                        ￥2378
+                    </div>
+                    <div class="panel-content" style="text-align:left">
+                        <div id="margin-top-20">
+                            <select style="height:30px;width:150px;margin-left:20px;font-family:'Microsoft YaHei';">
+                                <option value="1">珠光蓝/奶白</option>
+                                <option value="2">马卡棕/奶白</option>
+                                <option value="3">铃木红/奶白</option>
+                                <option value="4">宝兰/奶白</option>
+                            </select>
+                            <input class="form-control" type="number" value="1" style="height:30px;width:100px;margin-left:10px;font-family:'Microsoft YaHei';">
+                            件
+                        </div>
+                        <div id="margin-top-10">
+                            <select style="height:30px;width:150px;margin-left:20px;font-family:'Microsoft YaHei';">
+                                <option value="1">珠光蓝/奶白</option>
+                                <option value="2">马卡棕/奶白</option>
+                                <option value="3">铃木红/奶白</option>
+                                <option value="4">宝兰/奶白</option>
+                            </select>
+                            <input class="form-control" type="number" value="1" style="height:30px;width:100px;margin-left:10px;font-family:'Microsoft YaHei';">
+                            件
+                        </div>
+                        <div id="margin-top-10">
+                            <select style="height:30px;width:150px;margin-left:20px;font-family:'Microsoft YaHei';">
+                                <option value="1">珠光蓝/奶白</option>
+                                <option value="2">马卡棕/奶白</option>
+                                <option value="3">铃木红/奶白</option>
+                                <option value="4">宝兰/奶白</option>
+                            </select>
+                            <input class="form-control" type="number" value="1" style="height:30px;width:100px;margin-left:10px;font-family:'Microsoft YaHei';">
+                            件
+                        </div>
+                        <div id="margin-top-10">
+                            <select style="height:30px;width:150px;margin-left:20px;font-family:'Microsoft YaHei';">
+                                <option value="1">珠光蓝/奶白</option>
+                                <option value="2">马卡棕/奶白</option>
+                                <option value="3">铃木红/奶白</option>
+                                <option value="4">宝兰/奶白</option>
+                            </select>
+                            <input class="form-control" type="number" value="1" style="height:30px;width:100px;margin-left:10px;font-family:'Microsoft YaHei';">
+                            件
+                        </div>
+                        <div id="margin-top-10">
+                            <select style="height:30px;width:150px;margin-left:20px;font-family:'Microsoft YaHei';">
+                                <option value="1">珠光蓝/奶白</option>
+                                <option value="2">马卡棕/奶白</option>
+                                <option value="3">铃木红/奶白</option>
+                                <option value="4">宝兰/奶白</option>
+                            </select>
+                            <input class="form-control" type="number" value="1" style="height:30px;width:100px;margin-left:10px;font-family:'Microsoft YaHei';">
+                            件
+                        </div>
+                        <div id="buy-button">
+                            <button id="button-big" class="button"><span class="icon-plus on-left"></span>新加一行&nbsp&nbsp&nbsp</button>
+                        </div>
+                        <div id="buy-button">
+                            <button class="button bg-orange" id="button-big"><span class="icon-arrow-right-3 on-left"></span>立即购买&nbsp&nbsp&nbsp</button>
+                            <button class="button bg-amber" id="button-big"><span class="icon-cart on-left"></span>加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="product-recommend">
+                <div class="panel">
+                    <div class="panel-header" style="text-align:center">
+                        推荐
+                    </div>
+                    <div class="panel-content" style="text-align:left;">
+                        <div class="grid fluid">
+                            <div class="row" style="position:relative">
+                                <div class="image-container span6" id="image-fullfill">
+                                    <a href="#"><img src="images/small.png"></a>
+                                </div>
+                                <div class="span6">
+                                    <a href="#">
+                                        <p>飞翔&nbspMQP-A4820-Z1</p>
+                                        <div class="fg-green" data-role="rating" data-score="4" data-stars="5"></div>
+                                    </a>
+                                    <div style="position:absolute;bottom:10px;">
+                                        <button class="button bg-amber" id="button-big"><span class="icon-cart on-left"></span>加入购物车</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="position:relative">
+                                <div class="image-container span6" id="image-fullfill">
+                                    <a href="#"><img src="images/small.png"></a>
+                                </div>
+                                <div class="span6">
+                                    <a href="#">
+                                        <p>飞翔&nbspMQP-A4820-Z1</p>
+                                        <div class="fg-green" data-role="rating" data-score="4" data-stars="5"></div>
+                                    </a>
+                                    <div style="position:absolute;bottom:10px;">
+                                        <button class="button bg-amber" id="button-big"><span class="icon-cart on-left"></span>加入购物车</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="icon-arrow-up-5 on-right on-left" id="back2top" onclick="javascript: document.getElementById('hook').scrollIntoView()"></button>
+
+    </div>
+
+</body>
+</html>
