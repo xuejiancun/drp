@@ -74,40 +74,9 @@
                         </div>
 
                         <div class="panel-content">
-                            <div class="carousel" id="product-image-carousel">
-                                <div class="slide">
-                                    <a href="#"><img src="images/car1.jpg" class="cover1" /></a>
-                                </div>
-
-                                <div class="slide">
-                                    <a href="#"><img src="images/car2.jpg" class="cover1" /></a>
-                                </div>
-
-                                <div class="slide">
-                                    <a href="#"><img src="images/car3.jpg" class="cover1" /></a>
-                                </div>
-
-                                <div class="slide">
-                                    <a href="#"><img src="images/car4.jpg" class="cover1" /></a>
-                                </div>
-
-                                <div class="slide">
-                                    <a href="#"><img src="images/car5.jpg" class="cover1" /></a>
-                                </div>
+                            <div class="slide">
+                                <img src="images/car1.jpg" class="cover1" id="previewImage" />
                             </div>
-                            <script>
-                                $(function () {
-                                    $("#product-image-carousel").carousel({
-                                        height: 315,
-                                        period: 5000,
-                                        effect: "fade",
-                                        markers: {
-                                            show: true,
-                                            position: 'bottom-center'
-                                        }
-                                    });
-                                })
-                            </script>
                         </div>
                     </div>
                 </div>
@@ -356,62 +325,50 @@
                     </div>
                     <div class="panel-content" style="text-align:left">
                         <div id="margin-top-20">
-                            <select style="height:30px;width:150px;margin-left:20px;font-family:'Microsoft YaHei';">
-                                <option value="1">珠光蓝/奶白</option>
-                                <option value="2">马卡棕/奶白</option>
-                                <option value="3">铃木红/奶白</option>
-                                <option value="4">宝兰/奶白</option>
-                            </select>
-                            <input class="form-control" type="number" value="1" style="height:30px;width:100px;margin-left:10px;font-family:'Microsoft YaHei';">
-                            件
+                            <label class="inline-block" style="height:30px;width:150px;margin-left:20px;font-family:'Microsoft YaHei';font-size:small;">
+                                <input type="checkbox" value="1" onclick="selectColor(this)" />
+                                <span class="check"></span>
+                                珠光兰/奶白
+                            </label>
+                            <input class="form-control" type="number" placeholder="输入订购数量" style="height:30px;width:150px;font-family:'Microsoft YaHei';font-size:small;">
                         </div>
                         <div id="margin-top-10">
-                            <select style="height:30px;width:150px;margin-left:20px;font-family:'Microsoft YaHei';">
-                                <option value="1">珠光蓝/奶白</option>
-                                <option value="2">马卡棕/奶白</option>
-                                <option value="3">铃木红/奶白</option>
-                                <option value="4">宝兰/奶白</option>
-                            </select>
-                            <input class="form-control" type="number" value="1" style="height:30px;width:100px;margin-left:10px;font-family:'Microsoft YaHei';">
-                            件
+                            <label class="inline-block" style="height:30px;width:150px;margin-left:20px;font-family:'Microsoft YaHei';font-size:small;">
+                                <input type="checkbox" value="2" onclick="selectColor(this)" />
+                                <span class="check"></span>
+                                马卡棕/奶白
+                            </label>
+                            <input class="form-control" type="number" placeholder="输入订购数量" style="height:30px;width:150px;font-family:'Microsoft YaHei';font-size:small;">
                         </div>
                         <div id="margin-top-10">
-                            <select style="height:30px;width:150px;margin-left:20px;font-family:'Microsoft YaHei';">
-                                <option value="1">珠光蓝/奶白</option>
-                                <option value="2">马卡棕/奶白</option>
-                                <option value="3">铃木红/奶白</option>
-                                <option value="4">宝兰/奶白</option>
-                            </select>
-                            <input class="form-control" type="number" value="1" style="height:30px;width:100px;margin-left:10px;font-family:'Microsoft YaHei';">
-                            件
+                            <label class="inline-block" style="height:30px;width:150px;margin-left:20px;font-family:'Microsoft YaHei';font-size:small;">
+                                <input type="checkbox" value="3" onclick="selectColor(this)" />
+                                <span class="check"></span>
+                                铃木红/奶白
+                            </label>
+                            <input class="form-control" type="number" placeholder="输入订购数量" style="height:30px;width:150px;font-family:'Microsoft YaHei';font-size:small;">
                         </div>
                         <div id="margin-top-10">
-                            <select style="height:30px;width:150px;margin-left:20px;font-family:'Microsoft YaHei';">
-                                <option value="1">珠光蓝/奶白</option>
-                                <option value="2">马卡棕/奶白</option>
-                                <option value="3">铃木红/奶白</option>
-                                <option value="4">宝兰/奶白</option>
-                            </select>
-                            <input class="form-control" type="number" value="1" style="height:30px;width:100px;margin-left:10px;font-family:'Microsoft YaHei';">
-                            件
+                            <label class="inline-block" style="height:30px;width:150px;margin-left:20px;font-family:'Microsoft YaHei';font-size:small;">
+                                <input type="checkbox" value="4" onclick="selectColor(this)" />
+                                <span class="check"></span>
+                                宝兰/奶白
+                            </label>
+                            <input class="form-control" type="number" placeholder="输入订购数量" style="height:30px;width:150px;font-family:'Microsoft YaHei';font-size:small;">
                         </div>
                         <div id="margin-top-10">
-                            <select style="height:30px;width:150px;margin-left:20px;font-family:'Microsoft YaHei';">
-                                <option value="1">珠光蓝/奶白</option>
-                                <option value="2">马卡棕/奶白</option>
-                                <option value="3">铃木红/奶白</option>
-                                <option value="4">宝兰/奶白</option>
-                            </select>
-                            <input class="form-control" type="number" value="1" style="height:30px;width:100px;margin-left:10px;font-family:'Microsoft YaHei';">
-                            件
-                        </div>
-                        <div id="buy-button">
-                            <button id="button-big" class="button"><span class="icon-plus on-left"></span>新加一行&nbsp&nbsp&nbsp</button>
+                            <label class="inline-block" style="height:30px;width:150px;margin-left:20px;font-family:'Microsoft YaHei';font-size:small;">
+                                <input type="checkbox" value="5" onclick="selectColor(this)" />
+                                <span class="check"></span>
+                                炫酷橙/奶白
+                            </label>
+                            <input class="form-control" type="number" placeholder="输入订购数量" style="height:30px;width:150px;font-family:'Microsoft YaHei';font-size:small;">
                         </div>
                         <div id="buy-button">
                             <button class="button bg-orange" id="button-big"><span class="icon-arrow-right-3 on-left"></span>立即购买&nbsp&nbsp&nbsp</button>
                             <button class="button bg-amber" id="button-big"><span class="icon-cart on-left"></span>加入购物车</button>
                         </div>
+
                     </div>
                 </div>
             </div>
